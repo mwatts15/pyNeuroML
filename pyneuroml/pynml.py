@@ -661,7 +661,7 @@ def write_neuroml2_file(nml2_doc, nml2_file_name, validate=True,
     writers.NeuroMLWriter.write(nml2_doc, nml2_file_name)
 
     if validate:
-        validate_neuroml2(nml2_file_name, verbose_validate)
+        return validate_neuroml2(nml2_file_name, verbose_validate)
 
 
 def read_lems_file(lems_file_name, include_includes=False, fail_on_missing_includes=False, debug=False):
