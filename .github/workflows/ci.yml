@@ -32,4 +32,3 @@ jobs:
       run: |
         pynml -h
         ./test-ghactions.sh
-        pytest .
